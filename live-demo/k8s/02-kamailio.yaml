@@ -54,7 +54,7 @@ spec:
               value: ""
         - name: dispatchers
           image: cycoresystems/dispatchers
-          command:
+          args:
             - "-set"
             - voip:asterisk=1:5080
           volumeMounts:
