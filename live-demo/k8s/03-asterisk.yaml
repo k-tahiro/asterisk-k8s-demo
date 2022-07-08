@@ -32,6 +32,8 @@ spec:
       labels:
         component: asterisk
     spec:
+      nodeSelector:
+        kubernetes.io/arch: amd64
       volumes:
         - name: config
           emptyDir: {}
