@@ -6,11 +6,12 @@ metadata:
   labels:
     component: kamailio
 spec:
+  type: NodePort
   ports:
     - name: sip
       protocol: UDP
       port: 5060
-      targetPort: 5060
+      targetPort: 65060
   selector:
     component: kamailio
 
