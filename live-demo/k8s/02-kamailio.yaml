@@ -43,7 +43,7 @@ spec:
           image: cycoresystems/kamailio
           env:
             - name: CLOUD
-              value: gcp
+              value: ""
           volumeMounts:
             - name: config
               mountPath: /data/kamailio
@@ -51,7 +51,7 @@ spec:
           image: cycoresystems/rtpproxy
           env:
             - name: CLOUD
-              value: gcp
+              value: ""
         - name: dispatchers
           image: cycoresystems/dispatchers
           command:
