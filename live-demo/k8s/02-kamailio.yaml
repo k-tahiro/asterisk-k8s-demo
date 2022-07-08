@@ -11,7 +11,8 @@ spec:
     - name: sip
       protocol: UDP
       port: 5060
-      targetPort: 65060
+      targetPort: 5060
+      nodePort: 30945
   selector:
     component: kamailio
 
