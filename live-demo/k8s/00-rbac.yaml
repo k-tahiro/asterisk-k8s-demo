@@ -12,7 +12,7 @@ rules:
     verbs: ["get", "watch", "list", "update", "patch"]
   - apiGroups: ["discovery.k8s.io"]
     resources: ["endpointslices"]
-    verbs: ["list"]
+    verbs: ["list", "watch"]
 
 ---
 
